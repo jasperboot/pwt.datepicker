@@ -3,7 +3,7 @@
  * @abstract
  * @global
  * @const
- * @todo move this to persin-date lib and remove from this project code repo
+ * @todo move this to persian-date lib and remove from this project code repo
  */
 var ClassDateRange = {
     /**

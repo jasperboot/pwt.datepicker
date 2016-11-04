@@ -31,7 +31,7 @@ var ClassNavigator = {
 
 
     /**
-     * @desc Defnine wich picker related to navigator
+     * @desc Define which picker is related to the navigator
      * @desc relation
      */
     relation: "day",

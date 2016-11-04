@@ -158,7 +158,7 @@ String.prototype.toPersianDigit = function (a) {
  * @param a
  * @returns {string}
  */
-String.prototype.toEngilshDigit = function (a) {
+String.prototype.toEnglishDigit = function (a) {
     return this.replace(/\d+/g, function (digit) {
         var enDigitArr = [], peDigitArr = [];
         for (var i = 0; i < digit.length; i++) {
@@ -173,7 +173,7 @@ String.prototype.toEngilshDigit = function (a) {
 
 
 /**
- * Helper Methuds
+ * Helper Methods
  * @param callback
  * @param ms
  */
@@ -270,7 +270,7 @@ jQuery.uaMatch = function (ua) {
 };
 
 
-// cDon't clobber any existing jQuery.browser in case it's different
+// Don't clobber any existing jQuery.browser in case it's different
 if (!jQuery.browser) {
     var matched = jQuery.uaMatch(window.navigator.userAgent);
     var browser = {};

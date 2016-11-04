@@ -19,7 +19,7 @@ var ClassDatepicker = {
 
 
     /**
-     * @desc if plugin selector detect as a div or any element exsept inpout set as true
+     * @desc if plugin selector detect as a div or any element except input set as true
      * @private
      */
     _inlineView: false,
@@ -76,7 +76,7 @@ var ClassDatepicker = {
         if (!this._pickers[state]) {
             this.element.main.hide();
             return false;
-            $.error(state + "Picker Set as {enabled:false} and dos not exist!! Set viewMode to Enabled view Check Configuration");
+            $.error(state + "Picker Set as {enabled:false} and does not exist!! Set viewMode to Enabled view Check Configuration");
         }
         return state;
     },
@@ -402,15 +402,15 @@ var ClassDatepicker = {
      */
     _defineOnInitState: function () {
         if ($(this.$container)[0].nodeName == 'INPUT') {
-            var garegurianDate = new Date(this.inputElem.val()).valueOf();
+            var gregorianDate = new Date(this.inputElem.val()).valueOf();
             this.$container = $('body');
         }
         else {
-            var garegurianDate = new Date($(this.$container).data('date')).valueOf();
+            var gregorianDate = new Date($(this.$container).data('date')).valueOf();
             this._inlineView = true;
         }
-        if (garegurianDate && garegurianDate != 'undefined') {
-            this.state.unixDate = garegurianDate;
+        if (gregorianDate && gregorianDate != 'undefined') {
+            this.state.unixDate = gregorianDate;
         }
         else {
             this.state.unixDate = new Date().valueOf();

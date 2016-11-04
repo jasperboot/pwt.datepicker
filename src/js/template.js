@@ -1,13 +1,13 @@
 /**
  * @global
  * @class TEMPLATE
- * @type {{datepciker: string, navigator: string, timepicker: string}}
+ * @type {{datepicker: string, navigator: string, timepicker: string}}
  */
 var TEMPLATE = {
     /**
      * @desc datepicker
      */
-    datepciker: "<div class='{{css.datePickerPlotArea}}' >" + //
+    datepicker: "<div class='{{css.datePickerPlotArea}}' >" + //
         "<div class='{{css.navigator}}' ></div>" +//
         " <div class='{{css.dayView}}' ></div>" + //
         "<div class='{{css.monthView}}' ></div>" + //

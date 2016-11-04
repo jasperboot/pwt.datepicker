@@ -10,7 +10,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @description if true all digit convert to persian digit.
+     * @description if true all digits converted to persian digit.
      * @type {boolean}
      * @default true
      */
@@ -39,7 +39,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @description If true picker close When Select day
+     * @description If true picker closes when day has been selected
      * @property autoClose
      * @type {boolean}
      * @default false
@@ -91,7 +91,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @description An input element that is to be updated with the selected date from the datepicker. Use the altFormat option to change the format of the date within this field. Leave as blank for no alternate field. acceptable value: : '#elementId','.element-class'
+     * @description An input element that is to be updated with the selected date from the datepicker. Use the altFormat option to change the format of the date within this field. Leave blank for no alternate field. Acceptable value: : '#elementId','.element-class'
      * @desc altField
      * @type {boolean}
      * @default false
@@ -195,7 +195,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @desc A function that takes current datepicker unixDate. It is called When Day Select.
+     * @desc A function that takes current datepicker unixDate. It is called when a day has been selected.
      * @event
      * @param unixDate
      */
@@ -418,7 +418,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @desc check date avalibility
+     * @desc check date availability
      * @property unix
      * @type {function}
      */
@@ -429,7 +429,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @desc check month avalibility
+     * @desc check month availability
      * @property month index
      * @type {function}
      */
@@ -440,7 +440,7 @@ var ClassConfig = {
 
     /**
      * @memberOf ClassDatepicker.ClassConfig
-     * @desc check year avalibility
+     * @desc check year availability
      * @property year
      * @type {function}
      */
