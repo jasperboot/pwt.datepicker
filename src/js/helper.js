@@ -245,7 +245,7 @@ var inherit = function (self, baseClasses) {
     }
     self.init();
     return self;
-}
+};
 
 
 /**
@@ -288,4 +288,4 @@ if (!jQuery.browser) {
     }
 
     jQuery.browser = browser;
-}
+};
