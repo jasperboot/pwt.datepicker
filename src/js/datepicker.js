@@ -427,7 +427,9 @@ var ClassDatepicker = {
      * @desc set time of timepicker
      */
     setTime: function () {
-        this.timePicker.setTime(this.state.selected.unixDate);
+        if (this.timePicker.setTime) {
+            this.timePicker.setTime(this.state.selected.unixDate);
+        }
     },
 
 
