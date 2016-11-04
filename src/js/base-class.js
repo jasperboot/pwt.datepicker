@@ -75,9 +75,9 @@ var ClassBase = {
         var newDate = new Date(pasted);
         var inputArray = pasted.split("/");
         if (inputArray.length === 3) {
-            var trueYear = inputArray[0].toString().length <= 4 && inputArray[0].toString().length >= 1;
-            var trueMonth = inputArray[1].toString().length <= 2 && inputArray[1].toString().length >= 1;
-            var trueDay = inputArray[2].toString().length <= 2 && inputArray[2].toString().length >= 1;
+            var trueYear = inputArray[0].toString().length <= 4 && inputArray[0].toString().length >= 1 && inputArray[0].toString() != '0';
+            var trueMonth = inputArray[1].toString().length <= 2 && inputArray[1].toString().length >= 1 && inputArray[1].toString() != '0';
+            var trueDay = inputArray[2].toString().length <= 2 && inputArray[2].toString().length >= 1 && inputArray[2].toString() != '0';
         }
         $.each(inputArray, function (index, key) {
             inputArray[index] = parseInt(key);
